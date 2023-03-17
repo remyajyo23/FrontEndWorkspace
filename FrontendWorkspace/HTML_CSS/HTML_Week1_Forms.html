@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--.colors - HTML user defined class: more than one tag can use one class name-->
+    <!--#heading - Unique id is given to each tag-->
+<style>
+.colors {
+    background-color: burlywood;
+    padding: 2px;
+}
+#heading{
+    background-color: sienna;
+    border: 2px solid peru
+}
+</style>
+
+</head>
+<body>
+<!--An HTML form is used to collect user input. 
+The user input is most often sent to a server for processing.-->
+<form action = "/action-page.java" target = "_blank" method = "get" autocomplete = "on">
+<!--input type without Label-->
+<input type = "text"><br>
+<input type = "number"><br>
+<input type = "password"><br>
+<input type = "date"><br>
+<input type = "radio"><br>
+<input type = "checkbox"><br>
+<input type = "submit"><br>
+<input type = "button"><br>
+
+<!--input type with Label-->
+<label for = "input1">Input1:</label>
+<input type= "text" id = "input1"><br>
+
+<!-- Let us define each input element-->
+<!-- The name in input attribute is for submitting a form element to the server.-->
+<!-- name is what your server receives and can then process.-->
+<!-- If the name attribute is omitted, the value of the input field will not be sent at all.-->
+<!-- id is what your frontend (CSS, JS) works with-->
+<!-- The id attribute is for uniquely identifying any element (not just form elements).-->
+<p id = "heading"> New form </p>
+<label for = "username" class="colors">User Name</label>
+<input type = "text" id = "username" name = "username" value = "Remya" readonly><br>
+<!--The value of a read-only input field will be sent when submitting the form!-->
+<label for = "phonenumber">Phone Number</label>
+<input type = "number" id = "phonenumber" name = "phonenumber" value = "1234" disabled><br>
+<!--The value of a disabled input field will not be sent when submitting the form!-->
+<label for = "password">Password</label>
+<input type = "password" id = "password" name = "password" maxlength="8" pattern="[A-Za-z]{8}"><br>
+
+<label for = "date">Date</label>
+<input type = "date" id = "date" name = "date" min="2000-01-02" max="1979-12-31"><br>
+
+<p>Radio Button</p>
+<input type = "radio" id = "radio1" name = "radio1" value = "Radio1">
+<label for = "radio1">Radio1</label><br>
+<input type = "radio" id = "radio2" name = "radio2" value = "Radio2">
+<label for = "radio2">Radio2</label><br>
+
+<p>Checkbox</p>
+<!--We group checkboxes with name attribute-->
+<input type = "checkbox" id = "checkbox1" name = "checkbox" value = "checkbox1">
+<input type = "checkbox" id = "checkbox2" name = "checkbox" value = "checkbox1">
+<input type = "checkbox" id = "checkbox3" name = "checkbox" value = "checkbox1">
+<label for "ch1">Checkbox1</label><br>
+
+<!--The <input type="submit"> defines a button for submitting the form data to a form-handler.-->
+<!--The form-handler is typically a file on the server with a script for processing input data.-->
+<!--The form-handler is specified in the form's action attribute.
+The target attribute specifies where to display the response that is received after 
+submitting the form
+_blank:The response is displayed in a new window or tab
+_self:The response is displayed in the current window
+_parent:The response is displayed in the parent frame
+_top:The response is displayed in the full body of the window
+
+The method attribute specifies the HTTP method to be used when submitting the form data
+get:The form-data can be sent as URL variables and post:HTTP post transaction
+
+The autocomplete attribute specifies whether a form should have autocomplete on or off.
+When autocomplete is on, the browser automatically complete values based on values that the user has entered before.-->
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>

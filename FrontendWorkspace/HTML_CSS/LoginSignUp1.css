@@ -1,0 +1,66 @@
+/*body{    
+    background-image: url("Images/RaceTrack1.jpg");
+    /*Set the background size
+    background-size: 100%;
+    /*Need to repeat the background image?
+    background-repeat: no-repeat;
+    /*This marks the transparency level of the text in the body
+    opacity: 0.8;
+}*/
+
+.mainHeader{
+    background-image: url("Images/RaceTrack1.jpg");
+    /*Need to repeat the background image?*/
+    background-repeat: no-repeat;
+    text-align: center;
+    align-items: center;
+    background-size: cover;
+    padding-bottom: 70px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.mainHeaderLink{
+    color: blue;
+    text-align: center;
+    padding: 20px;
+}
+
+h1{
+    color:yellow;
+}
+
+/*form{
+    position: absolute;
+    border: 1px solid white;
+    /*top and left: aligning the items to center
+    top:30%;
+    left: 40%;    
+    width: 20%;
+    padding-left: 10px;
+    opacity:0.8;
+}*/
+/*input{
+    margin-top: 10px;
+    padding-left: 10px;
+    border-radius: 25px;
+    height:20px;
+    width:80%;
+}*/
+
+.button{
+    opacity:0.8;
+    border-radius: 25px;
+    display:inline-block;
+    font-size: 30px;
+    padding: 15px;
+    background-color: crimson;
+    color: white;
+    font-weight: bolder;
+    width:300px;
+}
+
+.buttongroup{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}

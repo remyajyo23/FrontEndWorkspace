@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Hello HTML!!
+    </title>
+    <style>
+        table,th,td{
+            border: 1px solid green
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- If we write the line in paragraphs without <p> tag, we cant see them on seperate paragrah-->
+    1st Line of testing paragraph without tag
+    2nd Line of testing Paragrah without tag
+    <!-- Paragrah Tag - breaks text into paragraphs-->
+    <p><b>This is paragraph tag</b></p>
+    <p>1st Line of paragraph</p>
+    <p>2nd Line of Paragrah</p>
+
+    <!--Header tag - 6 levels of headers-->
+    <h3><u>Header Tags</u> </h3>
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <h3>Header 3</h3>
+    <h4>Header 4</h4>
+    <h5>Header 5</h5>
+    <h6>Header 6</h6>
+
+    <!--HTML Color tag - color text,background of text,border of paragraph
+    3 standards:
+    RGB range(0 to 255) rgb(0,0,255),
+    Hex range(00toff) hex(00ff00),
+    HSL range(0% to 100%) hsl(100%,0%,0%)-->
+    <h3>HTML Color tag - Text Background Color</h3>
+    <h3 style="background-color: rgb(255,0,0);">RGB color</h3>
+    <h3 style="background-color: #00ff00;">Hex Color</h3>
+    <h3 style="background-color: hsl(100%,0,100%);">HSL color</h3>
+    <h3 style="background-color: green;">Another was of HSL color</h3>
+
+    <h3>HTML Color tag - Text Border Color</h3>
+    <h3 style="border: 2px solid green;">Hsl text border</h3>
+    <h3 style="border: 2px solid rgb(255,0,0);">Rgb text border</h3>
+
+    <h3>HTML Text Color</h3>
+    <p style="color: green;">Text color</p>
+
+    <!--Hr - to draw line where needed in the web page and Br - to go to next line tag-->
+    <h3>Hr tag</h3>
+    <hr />
+    <h3>br tag</h3>
+    <br />
+
+    <!--Anchor tag:<a></a> - to have links to other html pages or links
+    href property will take the link as input in anchor tag-->
+    <a href="https://www.google.com"> Visit google</a>
+
+    <!--Unordered list: list with no numbering - default is bullet pointer-->
+    <h3>Unordered List</h3>
+    <!--List with bullet pointer-->
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+    <!--List with circle pointer-->
+    <ul style="list-style-type: circle;">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+    <!--List with square pointer-->
+    <ul style="list-style-type: square;">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+
+    <!--Ordered List: List with number or alphabets - default is number-->
+    <h3>Ordered List</h3>
+    <!--List with Numbers-->
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+    <!--List with Alphabets-->
+    <ol style = "list-style-type: lower-alpha;">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+    <!--List with roman numbers-->
+    <ol style = "list-style-type: upper-roman">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+
+    <!--Table tag
+    <Table> - all data regarding table should be inside this tag
+    <tr> - row tag
+    <th> - header tag
+    <td> - data tag-->
+
+    <Table>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+        </tr>
+        <tr>
+            <td>Row 1- Data of Column 1</td>
+            <td>Row 1 - Data of Column 2</td>
+        </tr>
+        <tr>
+            <td>Row 2- Data of Column 1</td>
+            <td>Row 2 - Data of Column 2</td>
+        </tr>
+    </Table>
+
+    <!--HTML Links - we can use images and buttons as links to different pages-->
+    <!--Image as Link-->
+    <a href = "https://www.google.com">
+        <img src = ""D:\Remya Documents\MyLearning\ACP - Full Stack Development\pic1.webp">
+    </a>
+    <!--Email as Link-->
+    <a href = "mailTo:abc@gmail.com"></a>
+    <!--Button as Link-->
+    <button onclick="">Submit</button>
+
+    <!--Image tag- to show images in the web page-->
+    <!-- <img> alt alternate text specified to show if the image is not loaded-->
+    <h3>Image from local</h3>
+    <img src="D:\Remya Documents\MyLearning\ACP - Full Stack Development\pic1.webp" alt="Image not loaded">
+    <h3>Image from web</h3>
+    <img src="https://en.wikipedia.org/wiki/Smiley#/media/File:Smiley.svg" alt="Image not loaded">
+</body>
+
+</html>

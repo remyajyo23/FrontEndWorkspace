@@ -1,0 +1,11 @@
+/*Styling types: Inline,External,Internal
+Inline: for one property only - we use it along with himtl tag and property
+Internal: for more than one property in same file
+External: for more than one file
+    //syntax to add CSS file to html
+    <link rel ="stylesheet" href = "External_Style.css"/>
+    rel:will let html know that link provided is css file
+    href: link to the file here
+    If the css file is in same folder, the just mention the file name
+*/
+
